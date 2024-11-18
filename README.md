@@ -49,11 +49,9 @@
 
 <h2>🛠 Tecnologias Utilizadas</h2>
 <ul>
-    <li>Linguagem de programação: <em>Especifique aqui (por exemplo, JavaScript, Python, Java)</em>;</li>
-    <li>Framework: <em>Especifique aqui (por exemplo, Express.js, Django, Spring Boot)</em>;</li>
-    <li>Banco de dados: <em>Especifique aqui (por exemplo, MongoDB, MySQL, PostgreSQL)</em>;</li>
-    <li>Outras tecnologias: <em>Especifique aqui se houver</em>.</li>
-</ul>
+    <li>Linguagem de programação: <em>C#</em>;</li>
+    <li>Banco de dados: <em>Usado apenas EntityFramework in memory para tempo de execução</em>;</li>
+    </ul>
 
 <h2>🤝 Contribuindo</h2>
 <p>Contribuições são bem-vindas! Sinta-se à vontade para abrir uma <em>issue</em> ou enviar um <em>pull request</em>.</p>

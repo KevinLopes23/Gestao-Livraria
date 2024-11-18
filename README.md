@@ -40,7 +40,7 @@
 
 <h2>🚀 Como Executar o Projeto</h2>
 <ol>
-    <li>Clone este repositório: <code>git clone https://github.com/seu_usuario/seu_repositorio.git</code>;</li>
+    <li>Clone este repositório: <code>git clone https:https://github.com/KevinLopes23/Gestao-Livraria</code>;</li>
     <li>Instale as dependências necessárias;</li>
     <li>Configure o banco de dados, se aplicável;</li>
     <li>Inicie a aplicação com o comando apropriado;</li>

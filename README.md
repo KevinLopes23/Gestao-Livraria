@@ -1,63 +1,58 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    
-</head>
-<body>
+<div align="center">
 
-<h1>API para Livraria Online</h1>
+# 📖 Gestão de Livraria API
 
-<p>Este projeto é uma API desenvolvida para uma livraria online. O sistema permite que o usuário crie, visualize, edite e exclua livros do catálogo.</p>
+**API em ASP.NET Core para manter o catálogo de livros de uma livraria online.**
 
-<h2>📚 Funcionalidades</h2>
-<ul>
-    <li>Criar um novo livro no catálogo;</li>
-    <li>Visualizar todos os livros disponíveis;</li>
-    <li>Editar informações de um livro existente;</li>
-    <li>Excluir um livro do catálogo.</li>
-</ul>
+![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
 
-<h2>📖 Estrutura do Livro</h2>
-<p>Cada livro possui os seguintes campos:</p>
-<ul>
-    <li><strong>ID único</strong> para identificar cada livro;</li>
-    <li><strong>Título</strong> do livro;</li>
-    <li><strong>Autor</strong> do livro;</li>
-    <li><strong>Gênero</strong> do livro (exemplos: ficção, romance, mistério);</li>
-    <li><strong>Preço</strong> do livro;</li>
-    <li><strong>Quantidade em estoque</strong> do livro.</li>
-</ul>
+</div>
 
-<h2>🌐 Endpoints da API</h2>
-<p>A API disponibiliza os seguintes endpoints:</p>
-<ul>
-    <li><strong>POST /livros</strong> - Criar um novo livro;</li>
-    <li><strong>GET /livros</strong> - Visualizar todos os livros;</li>
-    <li><strong>PUT /livros/{id}</strong> - Editar as informações de um livro pelo ID;</li>
-    <li><strong>DELETE /livros/{id}</strong> - Excluir um livro pelo ID.</li>
-</ul>
+## 💡 Sobre
 
-<h2>🚀 Como Executar o Projeto</h2>
-<ol>
-    <li>Clone este repositório: <code>git clone https:https://github.com/KevinLopes23/Gestao-Livraria</code>;</li>
-    <li>Instale as dependências necessárias;</li>
-    <li>Configure o banco de dados, se aplicável;</li>
-    <li>Inicie a aplicação com o comando apropriado;</li>
-    <li>Acesse os endpoints utilizando um cliente HTTP como Postman ou Insomnia.</li>
-</ol>
+API para cadastrar, consultar, editar e excluir livros do catálogo. Cada livro tem título, autor, gênero, preço e quantidade em estoque; a persistência usa Entity Framework Core com banco em memória, então não precisa configurar banco de dados. Projeto de estudo de C#/.NET.
 
-<h2>🛠 Tecnologias Utilizadas</h2>
-<ul>
-    <li>Linguagem de programação: <em>C#</em>;</li>
-    <li>Banco de dados: <em>Usado apenas EntityFramework in memory para tempo de execução</em>;</li>
-    </ul>
+## ✨ Funcionalidades
 
-<h2>🤝 Contribuindo</h2>
-<p>Contribuições são bem-vindas! Sinta-se à vontade para abrir uma <em>issue</em> ou enviar um <em>pull request</em>.</p>
+- Cadastrar livro
+- Buscar livro pelo ID
+- Atualizar livro
+- Excluir livro
+- Documentação via Swagger (ambiente de desenvolvimento)
 
-<h2>📄 Licença</h2>
-<p>Este projeto está sob a licença <a href="LICENSE">MIT</a>.</p>
+## 🛠️ Tecnologias
 
-</body>
-</html>
+- C# / ASP.NET Core Web API (.NET 8)
+- Entity Framework Core (InMemory)
+- Swashbuckle (Swagger)
+
+## 📌 Endpoints
+
+| Método | Rota | Descrição |
+|--------|------|-----------|
+| `POST` | `/api/livros` | Cadastra um livro (`titulo`, `autor`, `genero`, `preco`, `qntEmEstoque`) |
+| `GET` | `/api/livros/{id}` | Busca um livro pelo ID |
+| `PUT` | `/api/livros/{id}` | Atualiza um livro |
+| `DELETE` | `/api/livros/{id}` | Remove um livro |
+
+## 🚀 Como rodar
+
+Requer .NET 8 SDK.
+
+```bash
+git clone https://github.com/KevinLopes23/Gestao-Livraria.git
+cd Gestao-Livraria/LivrariaAPI
+dotnet run
+```
+
+O Swagger fica em `http://localhost:5048/swagger`.
+
+## 📄 Licença
+
+Distribuído sob a licença MIT. Veja [LICENSE](LICENSE).
+
+## 👤 Autor
+
+Feito por [Kevin Lopes](https://github.com/KevinLopes23)
